@@ -2,17 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>level</title>
+    <title>level 14</title>
     <style>
         body {
             background-color: #080808;
             color: #d0d0d0;
             font-family: 'Courier New', Courier, monospace;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
+        }
+        h1.level-title {
+            font-size: 2.2rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+            color: #ffffff;
         }
         .box {
             border: 1px solid #222;
@@ -22,28 +30,22 @@
             box-shadow: 0 0 20px rgba(0,0,0,0.8);
             position: relative;
         }
-        
-      
         .image-wrapper {
             position: relative;
             display: inline-block;
             margin: 0 auto;
         }
-
-       
         .covered-text {
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            z-index: 1; /* Sits behind the PNG */
+            z-index: 1;
             font-size: 1.2rem;
             color: #ffffff;
             white-space: nowrap;
-            user-select: text; 
+            user-select: text;
         }
-
-   
         img {
             max-width: 250px;
             height: auto;
@@ -52,8 +54,6 @@
             z-index: 2;
             margin: 0 auto;
         }
-
-        
         p.south-text {
             margin-top: 25px;
             font-size: 1rem;
@@ -63,16 +63,12 @@
     </style>
 </head>
 <body>
+    <h1 class="level-title">level 14</h1>
     <div class="box">
         <div class="image-wrapper">
-          
             <span class="covered-text">ampersand</span>
-            
-         
             <img src="blud.jpg" alt="blud">
         </div>
-
-     
         <p class="south-text">send to maker</p>
     </div>
 </body>
