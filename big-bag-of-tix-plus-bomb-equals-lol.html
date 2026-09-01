@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>level 13b</title>
+    <style>
+        body { 
+            background-color: #080808; 
+            color: #ffffff; 
+            font-family: Arial, Helvetica, sans-serif; 
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .animated-text {
+            position: absolute;
+            top: 50%;
+         
+            right: 20px; 
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+            white-space: nowrap;
+         
+            animation: spin 3s linear infinite, moveLeft 1s linear infinite;
+        }
+
+        
+        @keyframes spin {
+            0% {
+                transform: translateY(-50%) rotate(0deg);
+            }
+            100% {
+                transform: translateY(-50%) rotate(360deg);
+            }
+        }
+
+      
+        @keyframes moveLeft {
+            0% {
+                right: 20px;
+            }
+            100% {
+                right: 21px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="animated-text">hiddenhangout.neocities.org</div>
+
+</body>
+</html>
