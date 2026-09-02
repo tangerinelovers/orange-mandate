@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>level 18b</title>
+    <style>
+        body {
+            background-color: #080808;
+            color: #d0d0d0;
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .shake-container {
+            width: 50vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+        }
+
+        .shaking-text {
+            color: #ff0000;
+            font-size: 3rem;
+            font-weight: bold;
+            letter-spacing: 3px;
+            text-align: center;
+            text-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+            user-select: none;
+            cursor: pointer;
+            animation: violentShake 0.1s infinite;
+        }
+
+        .shake-container:hover {
+            top: 10%;
+            transform: translate(-50%, 0);
+        }
+
+        .shake-container:hover .shaking-text {
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+            text-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+        }
+
+        @keyframes violentShake {
+            0% { transform: translate(0, 0) rotate(0deg); }
+            20% { transform: translate(-3px, 2px) rotate(-1deg); }
+            40% { transform: translate(3px, -2px) rotate(1deg); }
+            60% { transform: translate(-2px, -1px) rotate(0deg); }
+            80% { transform: translate(2px, 3px) rotate(1deg); }
+            100% { transform: translate(1px, -2px) rotate(-1deg); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="shake-container">
+        <div class="shaking-text">SEND IT TO ME</div>
+    </div>
+
+</body>
+</html>
